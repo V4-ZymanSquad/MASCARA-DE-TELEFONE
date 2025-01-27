@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('#telefone_com_ddd').mask('(00) 0 0000-0000');
 
     //ID do botão
-    $('#lp-pom-button-893').click(function(){
+    $('#lp-pom-button-ADICIONE O NUMERO DO BOTÃO DO FORMULÁRIO AQUI').click(function(){
 
         //Nome do campo whatsapp
         if($('#telefone_com_ddd').val().trim().length < 16) {
