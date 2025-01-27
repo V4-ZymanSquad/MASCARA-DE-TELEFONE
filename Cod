@@ -1,0 +1,36 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+
+    //Nome do campo whatsapp
+    $('#telefone_com_ddd').mask('(00) 0 0000-0000');
+
+    //ID do botão
+    $('#lp-pom-button-893').click(function(){
+
+        //Nome do campo whatsapp
+        if($('#telefone_com_ddd').val().trim().length < 16) {
+
+            //Nome do campo whatsapp
+            $('#telefone_com_ddd').val("");
+          alert("Ops! Parece que faltam alguns números no whatsapp que você digitou. Por favor, digite corretamente.");
+            return false;
+
+        }
+        else{
+
+            //Nome do campo do link do WhatsApp
+            $('#link_whatsapp').val("");
+            //Nome do campo do link do WhatsApp    //Nome do campo whatsapp
+            $('#link_whatsapp').val("https://wa.me/55" + $('#whatsapp').cleanVal());
+            return true;
+        }
+        
+    });
+
+});
+  
+</script>
